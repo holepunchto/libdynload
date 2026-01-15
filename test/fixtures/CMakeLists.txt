@@ -3,7 +3,7 @@ add_library(foo SHARED lib.c)
 set_target_properties(
   foo
   PROPERTIES
-  VERSION 1.2.3
+  OUTPUT_NAME foo.1.2.3
 )
 
 add_library(bar SHARED lib.c)
@@ -11,13 +11,11 @@ add_library(bar SHARED lib.c)
 set_target_properties(
   bar
   PROPERTIES
-  VERSION 2.1.4
+  OUTPUT_NAME bar.2.1.4
 )
 
 install(
   TARGETS foo bar
-  LIBRARY
-    DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/lib"
-    NAMELINK_SKIP
+  DESTINATION "${CMAKE_CURRENT_SOURCE_DIR}/lib"
   COMPONENT fixtures
 )
