@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "libdynload",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/libdynload.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/libdynload/issues"
+  },
+  "homepage": "https://github.com/holepunchto/libdynload#readme",
+  "devDependencies": {
+    "cmake-fetch": "^1.0.0"
+  }
+}
