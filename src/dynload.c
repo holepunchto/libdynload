@@ -15,11 +15,11 @@ dynload_parse(const char *file, char *name, size_t len, dynload_version_t versio
 
   int end = 0;
 
-  while (file[end] != '.' && file[end] != '-' && file[end] != '\0') {
+  while (file[end] != '.' && file[end] != '\0') {
     end++;
   }
 
-  if (file[end] != '.' && file[end] != '-') return -1;
+  if (file[end] != '.') return -1;
 
   if (len - 1 < end) return -1;
 
